@@ -27,15 +27,15 @@ body{
 }
 @keyframes bg-animation{
     0%{
-        background-position: top;
+        background-position: left;
     }
 
     50%{
-        background-position: bottom;
+        background-position: right;
     }
 
     100%{
-        background-position: top;
+        background-position: left;
     }
 }
 
@@ -70,13 +70,13 @@ body{
     background-image: var(--gradient);
     background-size: 300%;
     background-position: left;   
-    transition: background-position 1s;
+    transition: background-position 0.5s;
     margin-top: 20px;
 }
 
 .fun:hover,
 .fun:focus{
-    background-position: right;
+    animation: bg-animation 1s infinite;
 }
 
 .title:hover{
